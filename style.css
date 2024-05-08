@@ -7,11 +7,33 @@
     list-style: none;
 }
 
+.container{
+width: 100%;
+height: 100%;
 
-#header {
+
+}
+
+.header-content {
     display: flex;
-    flex-direction: row;
-    align-items: baseline;
+
+    width: 100%;
+
+}
+
+.searcher-bar{
+    display: inline-block;
+
+}
+
+.button-container{
+    display: inline-block;
+
+}
+
+.pin-container {
+    display: flex;
+  
     
 
 }

@@ -6,16 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pinterest</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
     <div class="container">
 
-        <div id="header">
+        <header class="header-content">
 
-            <div class="logo-pinterest">
-                <img src="imagenes/pinterest-logo.png" alt="logo-pinterest">
+            <div class="pinterest-shadow">
+                <a href="">
+                    <div class="logo-pinterest">
+                        <i class="fa-brands fa-pinterest" style="color: #e60023;"></i>
+                    </div>
+                </a>
             </div>
             <div class="inicio-link">
                 <a class="inicio" href="">Inicio</a>
@@ -26,29 +33,69 @@
             <div class="searcher-container">
                 <div class="searcher-bar">
                     <div class="logo-buscar">
-                        <img src="imagenes/lupa.png" alt="lupa">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #767676;"></i>
                     </div>
                     <div class="buscar">
-                        <input type="text" name="busqueda" aria-label="Buscar">
+                        <input type="text" name="busqueda" placeholder="Buscar">
                     </div>
                 </div>
             </div>
             <div class="button-container">
-                <div class="notificaciones"></div>
-                <div class="mensajes"></div>
-                <div class="profile"></div>
-                <div class="options"></div>
+                <nav>
+                    <ul class="navega">
+                        <li>
+                                <div class="notificacion">
+                                    <i class="fa-solid fa-bell" style="color: #767676;"></i>
+                                </div>
+                        </li>
+                        <li>
+                                <div class="mensajes">
+                                    <i class="fa-solid fa-comment-dots" style="color: #767676;"></i>
+                                </div>
+                        </li>
+                        <li>
+                                <div class="tu-perfil">
+                                    <button class="nav-btn">L</button>
+                                </div>
+                        </li>
+                        <li>
+                                <div class="mas-opciones">
+                                    <i class="fa-solid fa-angle-down" style="color: #767676;"></i>
+                                </div>
+                        </li>
+                    </ul>
+                </nav>
             </div>
 
-        </div>
-        <div class="img-container">
-
-        </div>
-        <div id="footer">
-            <button id="more">
-
-            </button>
-        </div>
+        </header>
+        <main>
+            <div class="pin-container">
+                <div class="pin">
+                    <div class="pin-screen">
+                        <img class="pin-img" alt="">
+                        <div class="pin-buttons">
+                            <div class="top-buttons">
+                                <a href="...">Design</a>
+                                <button class="pin-btn">Guardar</button>
+                            </div>
+                            <div class="down-buttons">
+                                <button>upload</button>
+                                <button>...</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="preguntas">
+                <a href="">
+                    <div class="question-mark">
+                        <i class="fa-solid fa-question" style="color: #000111;"></i>
+                    </div>
+                </a>
+            </div>
+        </footer>
 
     </div>
 
