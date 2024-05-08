@@ -14,7 +14,7 @@ height: 100%;
 
 }
 
-.header-content {
+.header-container {
     display: flex;
 
     width: 100%;
@@ -22,12 +22,12 @@ height: 100%;
 }
 
 .searcher-bar{
-    display: inline-block;
+    display: inline;
 
 }
 
-.button-container{
-    display: inline-block;
+.navega li{
+    display: inline;
 
 }
 
