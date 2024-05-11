@@ -221,6 +221,7 @@
     height: 24px;
 
 }
+
 .nav-mas {
     border-radius: 600px;
 
@@ -244,7 +245,172 @@
     font-size: 16px;
 }
 
-.app-container{
+.app-container {
     display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    max-width: 1340px;
+    margin-left: 13px;
+    margin-right: 13px;
+
+}
+
+.pin-container {
+    width: 236px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.pin-screen {
+    position: relative;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.pin-screen>img {
+    width: 100%;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.pin-screen:hover .pin-buttons {
+    opacity: 1;
+}
+
+.pin-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #23232373;
+    border-radius: 15px;
+    top: 0;
+    padding: 13px;
+    opacity: 0;
+    cursor: zoom-in;
+}
+
+.buttons-up {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.btn-up {
+    display: flex;
+    justify-content: center;
+    background-color: #e60023;
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size: 14.5px;
+    border-radius: 30px;
+    padding: 17px 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons-down {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    width: 100%;
+    border-radius: 600px;
+}
+
+.btn-down {
+    background-color: #f1f1f1;
+    border-radius: 600px;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.footer-content{
+display: flex;
+justify-content: end;
+align-items: end;
+opacity: 1;
+visibility: visible;
+
+}
+
+.preguntas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 72px;
+    height: 64px;
+    margin: 16px;
+
+}
+
+.question-mark {
+    width: 56px;
+    height: 56px;
+}
+
+.icono-pregunta {
+    background-color: white;
+    border-radius: 600px;
+    border: none;
+    cursor: pointer;
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.icono-pregunta:hover {
+    background-color: rgb(241, 241, 241);
+
+}
+
+
+@media screen and (max-width: 1400px){
+
+    .app-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+}
+
+@media screen and (max-width: 1165px){
+
+    .app-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+}
+
+@media screen and (max-width: 920px){
+
+    .app-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+
+@media screen and (max-width: 668px){
+
+    .app-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media screen and (max-width: 400px){
+
+    .app-container {
+        grid-template-columns: 1fr;
+    }
     
 }
