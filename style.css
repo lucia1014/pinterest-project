@@ -53,8 +53,9 @@
 
 }
 
-.fa-brands {
+.fa-pinterest {
     font-size: 24px;
+    color: #e60023;
 }
 
 .inicio-btn {
@@ -131,6 +132,7 @@
 .fa-magnifying-glass {
     font-size: 16px;
     margin-right: 8px;
+    color: #767676;
 }
 
 .input-buscar {
@@ -172,6 +174,7 @@
 
 .fa-bell {
     font-size: 24px;
+    color: #767676;
 }
 
 .messages {
@@ -195,6 +198,7 @@
 
 .fa-comment-dots {
     font-size: 24px;
+    color: #767676;
 }
 
 .tu-perfil {
@@ -243,22 +247,20 @@
 
 .fa-angle-down {
     font-size: 16px;
+    color: rgb(118, 118, 118);
 }
 
 .app-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 15px;
-    max-width: 1340px;
-    margin-left: 13px;
-    margin-right: 13px;
+    width: 1400px;
+    margin: 13px auto;
+    columns: 6;
+    column-gap: 15px;
 
 }
 
 .pin-container {
-    width: 236px;
-    border-radius: 15px;
-    height: 100%;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 .pin-screen {
@@ -270,10 +272,9 @@
 }
 
 .pin-screen>img {
+    display: flex;
     width: 100%;
     border-radius: 15px;
-    width: 100%;
-    height: 100%;
 
 }
 
@@ -310,7 +311,7 @@
     font-weight: bold;
     font-size: 14.5px;
     border-radius: 30px;
-    padding: 17px 17px;
+    padding: 15px 15px;
     border: none;
     cursor: pointer;
 }
@@ -334,13 +335,8 @@
     font-weight: bolder;
 }
 
-.footer-content{
-display: flex;
-justify-content: end;
-align-items: end;
-opacity: 1;
-visibility: visible;
-
+.fa-xl {
+    columns: #303031;
 }
 
 .preguntas {
@@ -350,6 +346,9 @@ visibility: visible;
     width: 72px;
     height: 64px;
     margin: 16px;
+    position: fixed;
+    bottom: 5px;
+    right: 2px;
 
 }
 
@@ -365,8 +364,6 @@ visibility: visible;
     cursor: pointer;
     width: 56px;
     height: 56px;
-    font-size: 24px;
-    font-weight: bolder;
 }
 
 .icono-pregunta:hover {
@@ -374,43 +371,53 @@ visibility: visible;
 
 }
 
-
-@media screen and (max-width: 1400px){
-
-    .app-container {
-        grid-template-columns: repeat(5, 1fr);
-    }
-    
+.fa-question{
+    color: #000111;
+    font-size: 28px;
 }
 
-@media screen and (max-width: 1165px){
+
+@media screen and (max-width: 1400px) {
 
     .app-container {
-        grid-template-columns: repeat(4, 1fr);
+        width: calc(100% - 40px);
+        columns: 5;
     }
-    
+
 }
 
-@media screen and (max-width: 920px){
+@media screen and (max-width: 1165px) {
 
     .app-container {
-        grid-template-columns: repeat(3, 1fr);
+        width: calc(100% - 40px);
+        columns: 4;
     }
-    
+
 }
 
-@media screen and (max-width: 668px){
+@media screen and (max-width: 920px) {
 
     .app-container {
-        grid-template-columns: repeat(2, 1fr);
+        width: calc(100% - 40px);
+        columns: 3;
     }
-    
+
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 668px) {
 
     .app-container {
-        grid-template-columns: 1fr;
+        width: calc(100% - 40px);
+        columns: 2;
     }
-    
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .app-container {
+        width: calc(100% - 40px);
+        columns: 1;
+    }
+
 }
